@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Pacifico&display=swap');/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Noto+Serif+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url("../css/page1_from_0421.css");
+
+* {
+    padding:0;
+    margin:0;
+}
+
+*::selection{
+    color: rgba(225, 224, 233, 0.8);
+	background: rgba(199, 195, 195, 0.3);
+}
+
+body{
+    overflow: scroll;
+    font-family: 'Noto Serif Tc', serif;
+    font-weight:600;
+}
+
+header {
+    position:fixed;
+    width:100%;/*填滿瀏覽器*/
+    top:0;
+    padding:20px; /*加胖,順序（上下/左右）(上/左右/下) (上右下左)*/
+    box-sizing:border-box;/*讓box-size不會因為paddin/border增加*/
+    background :rgba(37, 33, 33, 0.4);
+    z-index:100000;/*數值越大越上方*/
+}
+
+nav{
+    width:60%;
+    margin:auto;
+    text-align:center;
+}
+nav ul{
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    display:inline-block;
+}
+
+nav li a{
+    display:inline-block;
+    margin: 0px 50px 0px;
+    padding:20px;
+    color: rgba(211, 243, 243, 0.5);
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav li a:hover{
+    color: rgba(215, 110, 101, 0.8);/*rgba(144,8,150,1);*/
+}
+/*========================section========================*/
+section{
+    position:relative;
+    width:100%;
+    height: 700px;
+    overflow: hidden; /*將多出的東西切掉*/
+    margin: 100px auto; /*上 左右 下*/
+}
+
+.left, .right{
+    position: absolute;
+    box-sizing: border-box; /*讓padding往內長，不超過box*/
+}
+
+.right{
+    width: 100%;
+}
+
+
+.left{
+    width: 50%;
+    /*剛剛下過absolute*/
+    left: 10px;
+    top:405px;
+    padding-bottom: 30px;
+    z-index:50;/*覆蓋*/
+    color: rgba(253,116,104,1);
+}
+
+.left h1{
+    font-size: 60px;
+    line-height: 1em;
+    padding-bottom: 20px;
+    font-family: 'Eagle Lake', cursive; 
+    font-family: 'Lora', serif;
+    /*font-family: 'Pacifico', cursive;*/
+    /*font-weight: 400;*/
+    
+}
+
+.left p{
+    width: 100%;
+    color: rgba(253,116,104,0.6); /*rgba(144,8,150,1);*/
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    line-height: 1.5em;
+
+}
+
+/*========================article========================*/
+
+.card{
+    width: 33.33%;
+    float: left; /*自左對齊*/
+    box-sizing: border-box;
+    text-align: center;
+    /*border: none*/
+    padding: 5px 0px;
+
+    background: rgba(63, 55, 70, 0); /*transparent background*/
+    
+    /*Transition:   屬性   秒數  屬性 秒數*/ 
+    transition: background 1s, color 1s;
+    -webkit-transition: background 1s, color 1s;
+
+}
+
+
+.card:hover{
+    cursor: pointer;
+    /*no colorif hovered
+    background: rgba(186, 178, 211, 0.5);
+    color: rgba(255,255,255,0.5);
+    */
+}
+
+/*======================== wraptext ========================*/
+
+.wraptext,.wraptext2 {
+    margin: 100px auto 100px;
+    float: none;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 30px;
+    background: rgba(225, 223, 179, .1s);
+    border: solid 5px rgba(254,227, 224,.1);
+    color: rgba(225, 224, 233, 0.8); 
+    font-family: 'Long Cang', cursive;
+}
+
+.wraptext h3, .wraptext2 h3{
+    color: rgba(176, 229, 238, 0.8); 
+    font-size: large;
+}
+
+.highlight{
+    line-height: 2em; /*2倍行距*/
+    color: rgba(240, 89, 89, 0.8); 
+    font-family: 'Long Cang', cursive;
+}
+
+.wraptext h3::selection,.wraptext2 h3::selection , .highlight::selection{
+	color: rgba(185, 152, 204, 0.8); 
+	background: rgba(199, 195, 195, 0.3);
+}
+
+.wraptext p, .wraptext2 p{
+    line-height: 2em; /*2倍行距*/
+    text-align:left;
+}
+
+.wraptext2 p, .wraptext2 h3, .wraptext2 .highlight, .wraptext p{
+    padding-left: 50px;
+}
+
+.wraptext p, .wraptext h3, .wraptext .highlight{
+    padding-right: 50px;
+}
+
+.wraptext img, .wraptext2 img{
+    width:45%;
+    float: left; /*至左圖繞文*/
+
+    transform: scale(.9, .9);
+	-ms-transform: scale(.9, .9);
+	-webkit-transform:  scale(.9, .9);
+
+    transition: transform 0.5s; 
+	-ms-transform:transform 0.5s;
+	-webkit-transition: transform 0.5s;
+
+    transition-timing-function:ease-in-out; 
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.wraptext2 img{
+    float: right;
+}
+
+.wraptext img:hover,.wraptext2 img:hover{
+    width:45%;
+    overflow: hidden;
+
+    transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+}
+
+
+/*========================footer========================*/
+footer{
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+    color: rgba(191, 218, 223, 0.5);
+    font-family: 'Noto Serif TC', serif;
+}
