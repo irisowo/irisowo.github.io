@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,900&display=swap&subset=chinese-traditional');
+
+*{
+	margin:0;
+	padding:0;
+	margin:auto;
+	
+}
+
+body{
+	font-family:'Noto Sans TC', sans-serif;
+}
+
+/*header*/
+header{
+	width:100%;
+	height: 80px;
+	background:rgb(137, 192, 193);	
+}
+
+nav{
+	width:60%;
+	text-align:center;
+	margin:auto;
+}
+
+.navbox{
+	float:left;
+	width: 33.33%;
+	height: 80px;
+	font-size:24px;
+	line-height:80px;
+	box-sizing:border-box;
+	color:rgba(255, 255, 255, 1);
+	
+	font-family: 'Pacifico', cursive;
+}
+
+.nav_ch_bg{
+	background:rgb(45, 87, 93);
+	cursor:pointer;
+}
+
+/*section*/
+section{
+	width:100%;
+	height:auto;
+	text-align: center;
+}
+
+main{
+	position:relative;
+	height:auto;
+	width:100%;
+}
+
+.navcontent{
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:300px;
+	padding:50px;
+	display:none;
+	z-index:1000;
+
+	color:rgba(51, 93, 45, 1);
+	font-size:50px;
+
+	background: rgba(255,255,255,0.5);
+
+}
+
+/*footer*/
+footer{
+	
+	padding:50px;
+	text-align:center;
+	color: white;
+	background:rgb(137, 192, 193);	
+}
+
+
+

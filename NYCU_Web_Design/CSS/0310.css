@@ -1,0 +1,229 @@
+/*
+Note:
+  class用. 
+  id 用# : <div id=_id></div>
+  border:solid 
+  display:block/inline/inline-block
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Noto+Serif+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;800;900&display=swap');
+
+
+/*=====================結構=======================*/
+html, body {
+  font-family: 'Noto Serif TC', serif, Roboto, Helvetica, Arial, sans-serif; /*font-family: Verdana, Geneva, Tahoma, sans-serif, "微軟正黑體";*/
+  font-size: 16px;
+  background-color:rgba(155, 136, 143, 0.3);
+  overflow-x: hidden;
+  text-align: center;
+}
+  
+/*header, nav, section, article, footer{
+    text-align: center;
+}*/
+
+
+/*========================內文====================*/
+.site-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 550;
+  letter-spacing: 0.2em;
+  color:#6f8082;
+  padding: 2px 20px;
+  border-left: solid 10px rgba(202, 97, 49, 0.844);
+}
+
+header a{
+  text-decoration: none;
+}
+
+/* 超連結的模式選則：a:link/a:visit a:hover/a:active */
+/*
+a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+*/
+
+
+/*========================nav========================*/
+nav{
+  /*------[color]------*/
+  background : #475c6f6b;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0px 10px 9px 2px rgba(249, 235, 200, 0.5);
+  padding: 20px;
+}
+
+nav ul{
+  /*！移除不必要的邊邊*/
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  display: inline-block;
+  font-size: large;
+  letter-spacing: 0.1em;
+  margin-inline: 5%;
+  border-left: dashed 6px rgba(230, 206, 126, 0.844);
+}
+
+nav li a{
+  display:inline-block;
+  color: rgb(227, 238, 242);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0px 4px;
+  /*------animation------*/
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li a:hover, nav li a:focus {
+  /*------[color]------*/
+  padding: 2px 12px;
+  border-radius: 5%;
+  background-color: rgba(249, 235, 200, 0.6);
+  border: none;
+  color: rgba(202, 97, 49, 0.844);
+  cursor: pointer;
+}
+
+
+/*========================section========================*/
+section{
+  width: 80%;
+  margin:auto;
+}
+
+.section-title {
+  color: #6f8082;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+section a{
+  text-decoration: none;
+}
+
+
+/*========================article========================*/
+article {
+  /*------block------*/
+  display: inline-block; 
+  width: 180px; /*設定寬度，否則以最寬元素為準*/
+  /*------[color]------*/
+  background: rgba(211, 206, 223, 0.8);
+  border: solid 7px rgba(223, 220, 231, 0.8);
+  margin: 20px; /*外距*/
+  border-radius: 10px;
+  /*------Font------*/
+  font-size: 1.0rem;
+  font-weight: 550;
+  color: #6f8082;
+  margin-bottom: 30px;
+  /*------box shadow------*/
+  box-shadow: 0 0 7px 7px rgba(0, 50, 177, 0.2);
+  transition: box-shadow .2s ease-in-out;
+}
+
+article h2{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+article p{
+  font-size: 1.1rem;
+  font-weight: 900;
+  color:rgba(202, 97, 49, 0.844);
+  margin-block:10px;
+}
+
+a article:hover{
+  /*------[color]------*/
+  background: rgba(249, 235, 200, 0.7);
+  color: #94aaad;
+  cursor: pointer;
+  box-shadow: 0 0 15px 15px rgba(0, 50, 177, 0.2);
+}
+
+a article:hover p{
+  color:rgb(232, 167, 87);
+}
+
+a article:active {
+  background: rgba(249, 235, 200, 0.9);
+  color: rgba(232, 99, 51, 0.913);
+}
+
+a article:active p{
+  color: rgba(232, 99, 51, 0.913);
+}
+
+.article_a{
+	color:#000;
+	text-decoration:none;
+}
+
+.article_a:hover{
+	color:#fff;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin-block: 15px;
+  
+  transform: scale(1.4, 1.4);
+	-ms-transform: scale(1.4, 1.4);
+	-webkit-transform: scale(1.4, 1.4);
+}
+
+
+/*========================footer========================*/
+/*------animation------*/
+.wave {
+  width: 100%;
+  padding: 50px;
+  margin: 0;
+  background-color: #5670866b;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%
+		);
+	}
+}
+
+footer {
+  box-sizing:border-box;/*讓box-size不會因為paddin/border增加*/
+  background-color: #5670866b;
+  padding-bottom: 10px;
+}
+
+.footer-link {
+  color: white;
+}
+
+.footer-link:hover,.footer-link:focus {
+  color: #aacbea;
+}

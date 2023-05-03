@@ -1,0 +1,275 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap'); /*font-family: 'Liu Jian Mao Cao', cursive;*/
+
+/*========================head=========================*/
+.head {
+	display: inline-block;
+	padding: 0px 20px 20px;
+}
+
+.head img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%; /*正方形圖才會變圓*/
+}
+
+.head span{
+	float: left;
+	font-size: 13px;
+	color: rgba(42, 157, 143, 1);
+	line-height: 40px; /*頭貼旁的字垂直置中*/
+	margin-left: 10px; /*頭貼旁的字水平置中*/
+}
+
+
+.background{
+	width:100%;
+	overflow-x: scroll; /*會滑來會去要記得加QQ*/
+	background:transparent url(../imgs/bg/bg-07.png) no-repeat;
+	/*background:rgb(26, 11, 0.6);*/
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*banner*/
+.banner{
+	position: relative;
+	overflow:hidden;
+	width:100%;
+	min-width:1500px;
+	height:700px;
+	margin:auto 0px;
+	background:url(../imgs/caseyy.jpg) no-repeat;
+	background-size:100%;
+	
+	animation: banner_ant ease 3s ;
+	animation-delay: 0s;
+    animation-fill-mode: forwards;
+	animation-duration: 4s; 
+	animation-iteration-count: 1;
+
+	-webkit-animation: banner_ant ease 3s ;
+	-webkit-animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+	-webkit-animation-duration: 4s; 
+	-webkit-animation-iteration-count: 1;
+
+}
+
+.anitext, .anitext2{
+	position:absolute;
+	top:30%;
+	left:20%;
+	font-family: 'Quintessential', cursive; 
+	/*font-family: 'Courgette', cursive;*/
+	font-weight: 400;
+	font-size:100px;
+	
+	color:rgba(255, 255, 255, 0.6);
+	opacity:0; /*一開始看不見*/
+
+	/*animation*/
+	animation-name: ant; /*動畫名稱*/
+	animation-duration: 4s; 
+	animation-iteration-count: 1;
+	animation-timing-function:ease; /*動畫方式：漸慢開始結束*/
+	animation-delay: 1s; /*1s後播放*/
+	animation-direction: normal;
+	animation-fill-mode: forward; /*動畫結束後停留在最後一格*/
+
+	-webkit-animation-name: ant;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;	
+}
+
+.anitext2{
+    color:rgba(43, 11, 11, 0.15);
+    top:55%;
+	left:15%;
+}
+
+@keyframes ant{
+	from {
+		left:0%;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+@keyframes banner_ant {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+/* =========================article========================= */
+article{
+	float:left;
+	display: inline;
+	width:100%;
+	margin: 100px auto;
+	overflow: hidden;
+	box-sizing:border-box;
+	background:rgba(255,255,255,);
+}
+
+aside,.aside2{
+	float:left;
+	display: inline;
+	width:100%;
+	margin: 50px auto 0px;
+	padding:0px;
+	overflow: hidden;
+	box-sizing:border-box;
+	background:rgba(255,255,255,);
+}
+
+.aside2{
+	width:100%;
+	float:none;
+	margin: 0px auto 0px;
+}
+
+article .picbox, aside .desbox2{
+	float: left;
+	position: relative; /*裡面要設fadebox-absolute，所以外box要設relative*/
+	box-sizing: border-box;
+}
+
+aside .desbox2{
+	width: 100%;
+	padding: 20px;
+	line-height: 3em;
+	text-align: center;
+	color: rgba(230, 219, 218, 0.8);
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+
+aside .desbox2 h1{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-weight: 700;
+	font-size: 40px;
+	color: rgba(184, 81, 71, 0.8);
+	line-height: 2em;
+	text-align: center;	
+}
+
+/*-------------- fadebox [More]button-------------*/
+.fadebox, .desbox2:hover .fadebox{
+	opacity: 1;
+}
+
+.fadebox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*font-family: 'Noto Serif TC', serif;*/
+
+	/* 把中心點從左上角移到中心 transform: translate(-50%, -50%); */
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); 
+	opacity: 0;
+}
+
+.fadebox a{
+	display: block;
+	font-size: 20px;
+	padding: 10px 40px;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	background: rgba(195, 210, 221, .3);
+}
+
+.fadebox a:hover{
+	color: rgb(32, 37, 77);
+	background: rgba(195, 210, 221, .8);
+}
+
+
+/* ========================= BOX2 ========================== */
+.box2{
+	/*[實用]當內容高度不同，inline-block會置下對齊，所以換成瀑布式排版*/
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background: rgba(31, 47, 88,0); /*transparent background*/
+	margin: 12px 0px 0px; /*與上面距12 */
+	z-index: 10;
+	overflow: hidden; /*自動隱藏超出的文字或圖片*/
+	/* delete it !! box-shadow: 2px 2px 8px rgba(173, 181,189,0);/*水平位移 垂直位移 模糊程度 色彩*/
+	border-radius: 10px;
+	/*字體*/
+	/*font-family: 'Noto Serif TC', serif;*/
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+.box2:hover{
+	cursor: pointer;
+}
+
+/*--------------BOX2 img-------------*/
+.box2 .imgbox img{
+	/*set size*/
+	width: 100%;
+	overflow: hidden;
+	float: left;
+
+	/*grayscale*/
+	filter: grayscale(100%);
+
+	transition: filter 0.5s; /*transform:rotate:(20deg);*/
+	-webkit-transition: filter 0.5s;
+
+	transition-timing-function: ease-in-out; 
+	-webkit-transition-timing-function: ease-in-out;
+
+	/*scale*/
+	transform: rotate(0deg) scale(0.8,0.8);
+	-ms-transform: rotate(0deg) scale(0.8,0.8); /*IE 9*/
+	-webkit-transform: rotate(0deg) scale(0.8,0.8); /*safari*/
+
+	transition: transform 0.5s; /*transform:rotate:(20deg);*/
+	-ms-transform:transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+.box2:hover .imgbox img{
+	filter: grayscale(0%);
+	transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+}
+
+/*------------BOX2 text------------*/
+.box2 h3{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: rgba(240, 231, 235, 0.8);
+	font-family: 'Liu Jian Mao Cao', cursive;
+	font-size:30px;
+	font-weight: 400;
+}
+
+.box2 p{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	font-weight: 900;
+	letter-spacing: 5px;
+	font-size: 20px;
+	font-family: 'Long Cang', cursive;
+	color: rgba(131, 195, 196, 0.5);
+}
