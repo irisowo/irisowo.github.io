@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>110-清大資安考古 | irisowo</title><meta name="keywords" content="研究所考試"><meta name="author" content="irisowo"><meta name="copyright" content="irisowo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="110 清大資安筆試考題 sol 第一行為解答, 之後為補充(非解答) 粉框表示沒查到答案 : 色碼#FFF0F5    Which protocol can create a security vulnerability in switches, firewalls, and routers because it authenticates using a cleartext password?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="110-清大資安考古">
+<meta property="og:url" content="http://example.com/2023/05/07/110-NTHU-CS/index.html">
+<meta property="og:site_name" content="irisowo">
+<meta property="og:description" content="110 清大資安筆試考題 sol 第一行為解答, 之後為補充(非解答) 粉框表示沒查到答案 : 色碼#FFF0F5    Which protocol can create a security vulnerability in switches, firewalls, and routers because it authenticates using a cleartext password?">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/skadi03.jpg">
+<meta property="article:published_time" content="2023-05-07T13:00:00.000Z">
+<meta property="article:modified_time" content="2023-05-09T05:40:35.497Z">
+<meta property="article:author" content="irisowo">
+<meta property="article:tag" content="研究所考試">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/skadi03.jpg"><link rel="shortcut icon" href="/favicon.png"><link rel="canonical" href="http://example.com/2023/05/07/110-NTHU-CS/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '110-清大資安考古',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-09 13:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/../img/suzuran04.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">標籤</div><div class="length-num">4</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分類</div><div class="length-num">4</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-th"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/skadi03.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">irisowo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-th"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">110-清大資安考古</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2023-05-07T13:00:00.000Z" title="發表於 2023-05-07 21:00">2023-05-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2023-05-09T05:40:35.497Z" title="更新於 2023-05-09 13:40">2023-05-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%85%E5%A4%A7%E8%B3%87%E5%AE%89/">清大資安</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="110"><a href="#110" class="headerlink" title="110"></a>110</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.lib.nthu.edu.tw/library/department/ref/exam/eecs/ils/110/2501.pdf">清大資安筆試考題</a></li>
+<li>sol 第一行為解答, 之後為補充(非解答)</li>
+<li>粉框表示沒查到答案 : 色碼#FFF0F5</li>
+</ul>
+<hr>
+<ol>
+<li><p>Which protocol can create a security vulnerability in switches, firewalls, and routers because it authenticates using a cleartext password?<br>(A) SNMP<br>(B) SSH<br>(C) SMTP<br>(D) NAT</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>A<br>Simple Network Management Protocol (SNMP) v1 and v2 authenticate with cleartext, allowing anyone monitoring packets to capture the password and have access to the network equipment</p>
+</div></details>
+</li>
+<li><p>Your company has a policy to not allow any connection from overseas addresses to its network. Which security mechanism is best to employ to accomplish this goal?<br>(A) VLAN management<br>(B) Access control lists<br>(C) Implicit deny<br>(D) Network separation</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B<br><a target="_blank" rel="noopener" href="https://quizlet.com/124395144/chapter-2-secure-network-administration-flash-cards/">src</a></p>
+</div></details>
+</li>
+<li><p>A company adopting an Infrastructure as a Service (IaaS) model would typically:<br>(A) Own the infrastructure equipment<br>(B) Be responsible for housing and maintaining equipment<br>(C) Only support networking infrastructure<br>(D) Pay on a per-use basis</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+</div></details>
+</li>
+<li><p>What is the primary enhancement WPA2 has over WEP?<br>(A) WPA2 uses longer keys than WEP.<br>(B) AES and CCMP.<br>(C) Temporary WEP keys using TKIP.<br>(D) WPA2 supports the 802.1x protocol for secure client authentication.</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>WEP</th>
+<th>WPA</th>
+<th>WPA2</th>
+<th>WPA3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Release</td>
+<td>1999</td>
+<td>2003</td>
+<td>2004</td>
+<td>2018</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>RC4</td>
+<td>RC4, TKIP</td>
+<td>AES, CCMP</td>
+<td>AES, CCMP and GCMP</td>
+</tr>
+<tr>
+<td>Cipher Type</td>
+<td>Stream</td>
+<td>Stream</td>
+<td>Block</td>
+<td>Block</td>
+</tr>
+<tr>
+<td>Session Key Size</td>
+<td>40&#x2F;104-bit<br>⇒ 64&#x2F;128-bit</td>
+<td>128-bit</td>
+<td>128 bit</td>
+<td>128&#x2F;192-bit</td>
+</tr>
+<tr>
+<td>Data Integrity</td>
+<td>CRC-32</td>
+<td>MIC</td>
+<td>CBC-MAC</td>
+<td>Secure Hash Algo</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>Open system and shared key</td>
+<td>PSK &amp; 802.1x with EAP variant</td>
+<td>PSK &amp; 802.1x with EAP variant</td>
+<td>SAE &amp; 802.1x with EAP variant</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>Both WEP &amp; WPA use RC4 Stream Cipher, while WPA uses TKIP and 48-bit IV</td>
+<td>WPA Personal : WPA-PSK<br>WPA Enterprise : WPA-802.1x&#x2F;RADIUS</td>
+<td>AES has a fixed block size of 128 bits and a key size of 128&#x2F;192&#x2F;256 bits</td>
+<td>Replace PSK and introduce a new handshake : SAE</td>
+</tr>
+</tbody></table>
+<ul>
+<li>PSK &#x3D; Pre-shared key</li>
+<li>AES has a fixed block size of 128 bits and a key size of 128&#x2F;192&#x2F;256 bits</li>
+<li>WPA3 introduce a new handshake : SAE (Simultaneous Authentication of Equals)</li>
+</ul>
+</div></details>
+</li>
+<li><p>What is the definition of privacy?<br>(A) Business secrets protected through trade laws<br>(B) The right to control information about you and what others can do with that<br>information<br>(C) Government information protected through laws concerning national security<br>(D) Information used to identify a specific individual</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+<ul>
+<li>Pll : Information used to identify a specific individual</li>
+</ul>
+</div></details>
+</li>
+<li><p>Which of the following represents two simple rules a good SLA should satisfy?<br>(A) Web standards and coding practices<br>(B) Technology and processes<br>(C) Services provided and level of performance<br>(D) Duration and protection</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>Network separation is used primarily to:<br>(A) Maximize performance<br>(B) Limit the required number of SPAN ports<br>(C) Separate networks for security reasons<br>(D) Facilitate logging of suspicious traffic</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>During your investigation of a security breach, you discover the corporate fileserver is connected to a VLAN that is accessible to systems in the development environment. This violates which security principle?<br>(A) VLAN management<br>(B) Least privilege<br>(C) Network separation<br>(D) Loop protection</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>Which of the following servers would you be least likely to place in a DMZ?<br>(A) Web server<br>(B) DNS server<br>(C) SMTP server<br>(D) File Server</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+</div></details>
+</li>
+<li><p>Which of the following is not a remote-access method?<br>(A) Remote desktop software<br>(B) Terminal emulation<br>(C) SaaS<br>(D) Secure Shell</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>An organization wanting to create a restricted-access, Internet-accessible resource for processing sensitive data might consider using?<br>(A) Software as a Service<br>(B) A private cloud<br>(C) A public cloud<br>(D) A community cloud</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>To achieve reliability and speed improvements through the use of RAID, which form would you use?<br>(A) RAID 0<br>(B) RAID 1<br>(C) RAID 10<br>(D) RAID 5</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+</div></details>
+</li>
+<li><p>In which of the following areas is evidence most likely to be lost if a compromised system is shut down before evidence collection is complete?<br>(A) Raw disk blocks<br>(B) Memory contents<br>(C) File system information<br>(D) USB drivers</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>When examining your network logs, you notice a large amount of TCP traffic coming from an external IP address directed at the web server in your DMZ. The destination TCP ports seems to be different for each packet you examine. What type of traffic are you likely seeing in your logs?<br>(A) Smurf attack<br>(B) Port scan<br>(C) Ping sweep<br>(D) DNS transfer</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>You suspect a user’s workstation is infected with malware and are about to begin an investigation. If you want to reduce the likelihood that this workstation will infect other systems on your network, but you still want to preserve as much evidence as possible, which of the following should you do?<br>(A) Shut down the workstation<br>(B) Remove the power cord from the workstation<br>(C) Remove the network cable from the workstation<br>(D) Remove all USB devices and peripherals</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>What type of network attack uses repetition or delay of valid data transmissions?<br>(A) Bonet<br>(B) Cross-site scripting<br>(C) Token hijacking<br>(D) Replay attack</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+</div></details>
+</li>
+<li><p>You’ve noticed some strange behavior today on your organization’s system. This morning things were working fine, but now when you enter the URL for your company’s main web page, you get a web page written in a foreign language. Which of the following attacks is occurring at your organization?<br>(A) Man-in-the-middle<br>(B) Watering hole attack<br>(C) DNS poisoning<br>(D) Spam</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+<ul>
+<li>DNS poisoning<ul>
+<li>sometimes referred to as DNS hijacking, redirection, spoofing, or cache poisoning which maliciously diverts the traffic from a legitimate site to a fake site.</li>
+</ul>
+</li>
+<li>Cache poisoning<ul>
+<li>Type<ul>
+<li>DNS cache poisoning<ul>
+<li>Similar to DNS spoofing</li>
+<li>Attacker enters a false {domain name, IP} mapping into DNS cache.</li>
+</ul>
+</li>
+<li>ARP cache poisoning</li>
+<li>Web cache poisoning</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></details>
+</li>
+<li><p>What change should you make to prevent session hijacking?<br>(A) Encrypt cookie files.<br>(B) Sanitize all the input fields.<br>(C) Outsource your site to the cloud.<br>(D) Apply SSL to the entire site, instead of just the login page.</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+<ul>
+<li>4 Steps to initiates an SSL&#x2F;TLS session<ul>
+<li>https : TCP 3way + SSL&#x2F;TLS handshake<br><img src='/img/computer-security/https.png' width=600></img><ul>
+<li>change cipher spec : send a msg encrypted “Here’s a encrypted msg try to decrypt it and verify that it’s up to spec”. Also, from now on, everything I send will be encrypted with master key(our shared key)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></details>
+</li>
+<li><p>Your site survey has discovered hidden in the ceiling a rough access point resembling one of the fire detectors. What type of device is this likely to be?<br>(A) An AP bought at the office supply store to boost the Wi-Fi signal near the sales department cubes<br>(B) Part of the normal corporate wireless LAN that is simply designed to blend in with the office<br>(C) A custom wireless evil twin that is attempting to gather user information<br>(D) A bluesnarfer</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>Your boss wants a network device that will detect malicious network traffic as it<br>happens and stop it from reaching systems inside your network. She has asked you to come up with several different options and present them to her in the morning. You should researching which of the following?<br>(A) Intrusion detection systems<br>(B) Intrusion prevention systems<br>(C) Firewalls<br>(D) Continuous auditing systems</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>Which of the following is not a step you’d perform when hardening a production system?<br>(A) Disable unnecessary services<br>(B) Disable unnecessary accounts<br>(C) Enable simple TCP services<br>(D) Configure auditing</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>C</p>
+</div></details>
+</li>
+<li><p>You want to hire someone to test an application your company just developed. The app handles sensitive data, so you want to limit the amount of information you release about the application to people outside your company Which of the following testing types are you looking for?<br>(A) White-box testing<br>(B) Gray-box testing<br>(C) Closed-box testing<br>(D) Black-box testing</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+</div></details>
+</li>
+<li><p>Your organization wants someone to examine your intranet portal to assess the threat from a malicious insider. What kind of testing is the most appropriate for this situation?<br>(A) Credentialed testing<br>(B) Code review<br>(C) Active testing<br>(D) Risk assessment</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>A</p>
+</div></details>
+</li>
+<li><p>Which of the following is one of the most common web attack methodologies?<br>(A) Cross-site scripting<br>(B) Cross-site request forgery<br>(C) Buffer overflows<br>(D) RPC errors</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>A</p>
+</div></details>
+</li>
+<li><p>Error and excepting handling should be performed in what fashion?<br>(A) All errors&#x2F;exceptions should be trapped and handled in the main program.<br>(B) All errors&#x2F;exceptions should be trapped and handled in the generating routine.<br>(C) Errors and exceptions should only be handled if they exceed a given severity.<br>(D) Errors and exceptions should be logged; handling is optional.</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>What would you use to create an HMAC?<br>(A) TLS<br>(B) SHA-256<br>(C) AES<br>(D) RSA</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>When a PKI system is used in conjunction with file and folder encryption, what is a potential risk?<br>(A) A lost or damaged key can lock data away permanently.<br>(B) Encryption prevents backups from being run.<br>(C) Once the root key of the PKI is compromised, all the encrypted data can be read.<br>(D) Encryption never has risks.</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>A</p>
+</div></details>
+</li>
+<li><p>The CIO asks you to ensure that all e-mails have strict non-repudiation. How can a PKI system solve this issue?<br>(A) Managing symmetric keys for e-mail encryption<br>(B) Forcing all users to use two-factor authentication when accessing the e-mail server<br>(C) Using PKI to support TLS on the SMTP delivery<br>(D) Issuing a digit certificate to all users for signing e-mails</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>D</p>
+</div></details>
+</li>
+<li><p>Why is it important to disable geo-tagging on your mobile device?<br>(A) Geo-tagging makes it so your friends can confirm you took the photos.<br>(B) Geo-tagging can inadvertently expose the location where photos were taken.<br>(C) Geo-tagging is a great hobby.<br>(D) Geo-tagging can enable correlation of photos and locations.</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+</div></details>
+</li>
+<li><p>Your boss wants you to order her a new laptop, one with a special chip that will allow her to store encryption keys using BilLocker to protect her drive. What special chip is your boss talking about?<br>(A) Trusted Platform Module<br>(B) PKI Module<br>(C) BitLocker Encryption Module<br>(D) FIPS 140 Chip</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>A</p>
+</div></details>
+</li>
+<li><p>(補充題) Which of the following are secure FTP protocols? (Choose two.)<br>A. SSL<br>B. FTPS<br>C. SFTP<br>D. TFTPE. SSH</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B, C</p>
+<ul>
+<li><strong>FTP</strong> is to download, upload, and transfer files<table>
+<thead>
+<tr>
+<th></th>
+<th>FTP</th>
+<th>SFTP</th>
+<th>FTPS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>File Transfer Protocol</td>
+<td>SSH(Secure) FTP</td>
+<td>FTP over TLS&#x2F;SSL</td>
+</tr>
+<tr>
+<td>Intro</td>
+<td>Plain FTP</td>
+<td>Nothing common with original FTP</td>
+<td>Plain FTP over TLS&#x2F;SSL channel</td>
+</tr>
+<tr>
+<td>Password &amp; Transfer</td>
+<td>Not Encrypted</td>
+<td>Encrypted</td>
+<td>Encrypted</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>TCP 21</td>
+<td>TCP 22</td>
+<td>TCP 21 or 990</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>scp [-r] filepath [user@]host:[path] </code><br>scp command is a file transfer program for SFTP in Linux</td>
+<td>HTTP over SSL &#x3D; HTTPS ⇒ FTP over SSL &#x3D; FTPS</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</div></details>
+</li>
+<li><p>(補充題) Encrypted IMAP uses which TCP port number?<br>A. 995<br>B. 993<br>C. 465<br>D. 587</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">sol</summary><div class="toggle-content"><p>B</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>POP3</th>
+<th>SMTP</th>
+<th>IMAP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Port</td>
+<td>110 without encryption</td>
+<td>25 for plaintext</td>
+<td>143 by default</td>
+</tr>
+<tr>
+<td>Port over TSL&#x2F;SSL</td>
+<td>995</td>
+<td>465</td>
+<td>993</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Which of the following protocols is becoming the standard for Internet mail applications? <code>IMAP</code></li>
+<li>Which protocol is primarily used for network maintenance and destination information? <code>ICMP</code></li>
+<li><strong>Email Protocol</strong>  <details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">POP3(Post Office Protocol)</summary><div class="toggle-content"><p><img src="/img/computer-security/POP3.png" alt="POP3"></p>
+<ul>
+<li><strong>POP3</strong> provides access to an inbox stored in an email server to executes the download and delete operations for messages.</li>
+<li><strong>Flow</strong><ul>
+<li>When a POP3 client connects to the mail server<br>⇒ retrieves all msgs from the mailbox<br>⇒ stores them on your local computer<br>⇒ deletes them from the remote server.</li>
+</ul>
+</li>
+</ul>
+</div></details>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">SMTP(Simple Mail Transfer Protocol)</summary><div class="toggle-content"><ul>
+<li><img src="/img/computer-security/SMTP.png" alt="SMTP"></li>
+<li><strong>SMTP</strong> are used to send&#x2F;exchange email messages between computers.</li>
+</ul>
+</div></details>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">IMAP</summary><div class="toggle-content"><p><img src="/img/computer-security/IMAP.png" alt="IMAP"></p>
+<ul>
+<li><strong>IMAP</strong> allows you to access and manage your email messages on the email server<br>⇒ you can manipulate folders, permanently delete and efficiently search through messages.<br>⇒ by default, all messages remain on the server until the user specifically deletes them.</li>
+</ul>
+</div></details></li>
+</ul>
+</div></details></li>
+</ol>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A0%94%E7%A9%B6%E6%89%80%E8%80%83%E8%A9%A6/">研究所考試</a></div><div class="post_share"><div class="social-share" data-image="/img/skadi03.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2023/05/07/109-NTHU-CS/" title="109-清大資安考古"><img class="cover" src="/img/skadi03.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-07</div><div class="title">109-清大資安考古</div></div></a></div><div><a href="/2023/05/07/111-NTHU-CS/" title="111-清大資安考古"><img class="cover" src="/img/skadi03.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-07</div><div class="title">111-清大資安考古</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/../img/suzuran04.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">irisowo</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">標籤</div><div class="length-num">4</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分類</div><div class="length-num">4</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/irisowo"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/irisowo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://hackmd.io/@IdMfQ4Z5Rc23MZOy8LAqvg" target="_blank" title="hackmd"><i class="fa-solid fa-file-lines"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#110"><span class="toc-number">1.</span> <span class="toc-text">110</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/05/07/111-NTHU-CS/" title="111-清大資安考古"><img src="/img/skadi03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="111-清大資安考古"/></a><div class="content"><a class="title" href="/2023/05/07/111-NTHU-CS/" title="111-清大資安考古">111-清大資安考古</a><time datetime="2023-05-07T13:30:00.000Z" title="發表於 2023-05-07 21:30">2023-05-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By irisowo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div></div></body></html>

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("./character.css");
+@import url("./characterList.css");
 @import url("./nav.css");
 @import url("./slide.css");
 
@@ -16,9 +17,6 @@
   font-family: 'Noto Serif JP', 'Shippori Mincho','Benne',serif; 
   
 }
-
-
-
 
 @keyframes hoverin {
 0% {
@@ -74,7 +72,6 @@ ul {
   list-style: none; 
 }
 
-
 *, *:before, *:after {
   box-sizing: inherit; 
 }
@@ -84,22 +81,20 @@ ul {
   max-height: 999999px; 
 }
 
-
 *::before, *::after {
   will-change: all;
   box-sizing: border-box; 
 }
 
-
 html {
   box-sizing: border-box; 
+  color: rgb(58, 42, 23);
 }
 
 body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, sans-serif; 
-  color: rgb(58, 42, 23); /*~~~~Note~~~*/
 }
 
 /*----反白----*/
@@ -108,25 +103,21 @@ body *::selection{
   color:rgb(192, 49, 104)
 }
 
-
 img {
   height: auto;
   max-width: 100%;
 }
-
 
 em, i, b {
   font-weight: normal;
   font-style: normal; 
 }
 
-
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #000; 
+  color: rgb(58, 42, 23);
 }
-
 
 .hide {
   position: absolute !important;
@@ -138,7 +129,6 @@ section {
   clear: both;
   zoom: 1; 
 }
-
 
 main dt,main dd,main p, main li {
   transform: rotate(0.05deg);
@@ -163,7 +153,6 @@ section {
 
 /*==============================================================================================================================*/
 @media screen and (max-width: 1023px) {
-
   body {
       overflow-x: hidden;
       font-size: 0;
@@ -178,18 +167,16 @@ section {
       margin-bottom: 0vw; /*再看看是哪個block負責空*/
   }
 
-
   main {
       display: block; 
       padding-top: 9vw;
       padding-bottom: 9vw;
       min-height: 100vw;
   }
-
 }
+
 /*==============================================================================================================================*/
 @media screen and (min-width: 1024px) {
-
   body {
     position: static;
     overflow: auto;
@@ -202,7 +189,6 @@ section {
     background: #fff;
     min-width: 1024px; 
   }
-
 
   #contents {
     position: relative;
@@ -251,13 +237,10 @@ footer img{
   margin-top:5vw;
 }
 
-
-
 @media screen and (max-width: 1023px) {
   footer p{
     line-height: 4vw;
     font-size: 1.5vw;
     margin-bottom: 2vw;
   }
-
 }
